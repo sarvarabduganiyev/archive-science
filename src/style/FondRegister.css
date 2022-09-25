@@ -1,0 +1,164 @@
+.fond-register {
+  background-image: url("../assets/img/register-fond.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 430px;
+}
+.fond-register-inner {
+  margin: 0px 50px;
+}
+.fond-tab {
+  display: flex;
+  padding-top: 30px;
+}
+.fond-tab button {
+  font-family: "AcromBold";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--white);
+}
+.border-bottom-style {
+  border-bottom: 3px solid var(--white);
+}
+.fond-tab button:last-child {
+  margin-left: 50px;
+}
+.searchFond {
+  margin-top: 50px;
+}
+.searchFond button {
+  padding: 10px 25px;
+  font-family: "AcromBold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--white);
+  background-color: var(--greenButton);
+  border-radius: 5px;
+}
+.searchFond {
+  display: flex;
+  justify-content: space-between;
+}
+.searchFond input {
+  width: 100%;
+  border: 1px solid var(--searchInputColor);
+  border-radius: 5px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.searchFond input::placeholder {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--placeHolderColor);
+}
+.grid-input {
+  margin-top: 18px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+.grid-input div:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grid-input div:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.grid-input div:nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.grid-input div:nth-child(4) {
+  grid-area: 1 / 4 / 2 / 7;
+}
+.grid-input h6 {
+  font-family: "AcromRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 151.5%;
+  color: var(--white);
+}
+.grid-input input {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+.type-date-input {
+  padding: 8px 10px !important;
+}
+
+@media (max-width: 972px) {
+  .grid-input div:nth-child(1),
+  .grid-input div:nth-child(2),
+  .grid-input div:nth-child(3),
+  .grid-input div:nth-child(4) {
+    grid-area: initial;
+  }
+  .grid-input {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 876px) {
+  .grid-input {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 664px) {
+  .grid-input {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .searchFond {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .searchFond input {
+    padding: 17px 13px;
+  }
+  .searchFond button {
+    padding: 10px 13px;
+    margin-top: 10px;
+  }
+  .fond-tab button {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 488px) {
+  .fond-register-inner {
+    margin: 0px 30px;
+  }
+  .fond-tab button:last-child {
+    margin-left: 25px;
+  }
+  .grid-input {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 30px;
+  }
+  .fond-tab button {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .searchFond button {
+    font-size: 13px;
+  }
+  .searchFond button {
+    padding: 3px 13px;
+  }
+  .searchFond input {
+    padding: 10px 13px;
+  }
+  .searchFond input::placeholder {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+.sectionCard {
+  margin: 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.section-card-inner {
+  padding: 45px 0px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--sectionBorder);
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.section-card-inner span {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+.section-card-inner:hover {
+  box-shadow: var(--sectionsShadow);
+  background-color: var(--yellowTwoColor);
+  font-family: "AcromMedium";
+  font-weight: 500;
+}
+
+@media (max-width: 1235px) {
+  .sectionCard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 967px) {
+  .sectionCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 775px) {
+  .sectionCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 559px) {
+  .sectionCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .sectionCard {
+    margin:  30px;
+  }
+}

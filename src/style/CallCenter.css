@@ -1,0 +1,195 @@
+.call-section-name {
+  background-image: url("../assets/img/callBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.call-center-wrapper {
+  margin: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.first-call-line {
+  display: flex;
+  padding-top: 120px;
+}
+.notification-box {
+  border-left: 5px solid var(--mainBlue);
+}
+.notification-box h3 {
+  margin-left: 10px;
+  font-family: "AcromMedium";
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 30px;
+  color: var(--blackTwoColor);
+}
+.notification-box p {
+  font-family: "AcromMedium";
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 430px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: var(--blackTwoColor);
+}
+.call-number-wrapper {
+  margin-left: 50px;
+}
+.call-number-wrapper p {
+  font-family: "AcromMedium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--blackTwoColor);
+}
+.call-number-wrapper h1 {
+  font-family: "AcromMedium";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 64px;
+  color: var(--mainBlue);
+}
+.person-data {
+  display: flex;
+}
+.person-data p {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--blackTwoColor);
+}
+.person-name-input {
+  border: 1px solid #c1c6c8;
+  border-radius: 5px;
+  padding: 12px 7px;
+}
+.person-phone-input {
+  border: 1px solid #c1c6c8;
+  border-radius: 5px;
+  padding: 12px 7px;
+}
+.phone-wrapper {
+  margin: 0px 30px;
+}
+.person-data select {
+  padding: 11px 7px;
+  background-color: var(--white);
+  border: 1px solid #c1c6c8;
+  border-radius: 5px;
+}
+.last-call-line {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.last-call-line input,
+.last-call-line select {
+  margin-top: 10px;
+}
+.data-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.data-search-wrapper button {
+  font-family: "AcromBold";
+  font-style: normal;
+  margin-left: 50px;
+  font-weight: 700;
+  padding: 10px 30px;
+  background-color: var(--mainBlue);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white);
+}
+.operator-girl img {
+  position: absolute;
+  height: 490px;
+  bottom: 0px;
+  right: 20px;
+}
+@media (max-width: 1190px) {
+  .operator-girl {
+    display: none;
+  }
+  .call-center-register {
+    width: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .first-call-line {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .call-number-wrapper {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .person-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .person-name-box,
+  .person-name-box input,
+  .phone-wrapper,
+  .phone-wrapper input,
+  .select-location-wrapper,
+  .select-location-wrapper select {
+    width: 100%;
+  }
+  .person-name-box,
+  .phone-wrapper,
+  .select-location-wrapper {
+    margin-top: 20px;
+  }
+  .last-call-line {
+    margin-top: 20px;
+  }
+  .data-search-wrapper {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .notification-box p {
+    width: initial;
+  }
+  .data-search-wrapper button {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 412px) {
+  .call-center-wrapper {
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 360px) {
+  .notification-box h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .notification-box p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .call-number-wrapper p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .call-number-wrapper h1 {
+    font-size: 31px;
+    line-height: 50px;
+  }
+  .notification-box {
+    border-left: 3px solid var(--mainBlue);
+  }
+}

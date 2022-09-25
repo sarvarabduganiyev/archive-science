@@ -1,0 +1,209 @@
+header {
+  position: relative;
+}
+.archive-logo-wrapper {
+  display: inline-block;
+  background-color: var(--mainBlue);
+  padding: 45px 25px;
+}
+.archive-logo-wrapper img {
+  width: 60px;
+}
+
+.archive-nav-wrapper {
+  display: flex;
+  border-bottom: 1px solid var(--mediaColor);
+  border-bottom-width: 80%;
+}
+
+.archive-links-wrapper {
+  width: 100%;
+  margin: 0px 43px 0px 21px;
+}
+.navbar-tab-wrapper {
+  display: flex;
+}
+.navbar-tab-wrapper button {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 50px;
+  /* background-color: red; */
+  color: var(--blackTwoColor);
+}
+.border-bottom-color {
+  border-bottom: 2px solid var(--mainBlue);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.navbar-tab-wrapper button:last-child {
+  margin-left: 20px;
+}
+.navbar-links,
+.nav-links-wrapper {
+  display: flex;
+}
+.top-logIn-btn {
+  display: none;
+}
+
+.indicator-drop {
+  margin: 0px 25px;
+}
+.nav-links-wrapper {
+  align-items: center;
+}
+.navbar-first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--mediaColor);
+}
+.nav-links-wrapper button:nth-child(1),
+.nav-links-wrapper button:nth-child(2) {
+  font-family: "ArialRegular";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #454142;
+}
+.nav-links-wrapper button:nth-child(3) {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #454142;
+}
+.nav-links-wrapper:nth-child(4) {
+  margin-left: 30px;
+}
+.nav-links-wrapper:nth-child(1) {
+  margin-left: 40px;
+}
+.nav-links-wrapper:nth-child(2) {
+  margin-left: 15px;
+}
+.nav-links-wrapper:nth-child(3) {
+  margin-left: 15px;
+}
+.nav-links-wrapper:nth-child(4) svg {
+  cursor: pointer;
+}
+/* second menu */
+.second-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0px;
+}
+.second-menu-box {
+  display: flex;
+}
+.second-menu-box-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.burger-icons-wrapper {
+  display: none;
+}
+.burger-wrapper {
+  opacity: 0;
+}
+.logOutColor {
+  background-color: var(--mainBlue);
+  color: white;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+.second-last-wrapper {
+  display: flex;
+}
+.second-menu-box button {
+  font-family: "AcromRegular";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  margin-right: 15px;
+  color: var(--blackTwoColor);
+}
+.nav-telegram-link,
+.nav-email-link {
+  margin-right: 15px;
+}
+.nav-telegram-link svg,
+.nav-email-link svg {
+  margin-right: 10px;
+}
+.alphabet-wrapper {
+  margin-left: 25px;
+}
+.logOutColor span {
+  font-family: "AcromMedium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.accordion__button {
+  background-color: var(--white);
+  padding: 5px 10px;
+  transition: 0.2s ease-in-out;
+}
+.accordion__button:hover {
+  background-color: var(--mainBlue);
+  color: var(--white);
+}
+
+@media (max-width: 1055px) {
+  .nav-links-wrapper:nth-child(1),
+  .nav-links-wrapper:nth-child(2) {
+    display: none;
+  }
+  .top-logIn-btn {
+    margin: 5px 0px 5px 0px;
+    display: block;
+  }
+  .navbar-tab-wrapper {
+    display: none;
+  }
+  .second-menu-wrapper {
+    display: none;
+  }
+  .burger-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+  }
+
+  .burger-wrapper {
+    transition: 0.3s ease;
+    background-color: var(--white);
+    box-shadow: 0 4px 7px -3px #4776b3;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 22;
+    transform: translateY(-20px);
+    visibility: hidden;
+  }
+  .burger-active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 500px) {
+  .archive-logo-wrapper {
+    padding: 36px 16px;
+  }
+  .logOutColor {
+    padding: 2px 8px;
+  }
+  .logOutColor span {
+    font-size: 11px;
+  }
+}

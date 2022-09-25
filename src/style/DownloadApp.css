@@ -1,0 +1,153 @@
+.mobile-section {
+  background-image: url("../assets/img/line.png");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mobile-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 80px;
+}
+.mobile-img-first img {
+  height: 500px;
+}
+.mobile-app-title-box {
+  margin-left: 430px;
+}
+.redline {
+  width: 100%;
+  height: 7px;
+  background-color: var(--hrRedColor);
+  margin: 20px 0px 10px 0px;
+}
+.mobile-app-title-box {
+  margin-top: 50px;
+}
+.mobile-app-title-box h1 {
+  font-family: "AcromBold";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: right;
+}
+.mobile-app-title-box p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 157.67%;
+  text-align: right;
+  color: #000000;
+}
+.mobile-app-title-box p:last-child {
+  margin-top: 20px;
+}
+.market-lins-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  margin-top: 30px;
+}
+.google-play-logo {
+  margin-left: 15px;
+}
+.market-lins-wrapper p {
+  font-family: "AcromBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 43px;
+  text-align: justify;
+  margin-right: 50px;
+}
+@media (max-width: 1292px) {
+  .mobile-app-title-box {
+    margin-left: 250px;
+  }
+}
+@media (max-width: 1152px) {
+  .mobile-app-title-box {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .mobile-flex {
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 846px) {
+  .mobile-img-first {
+    display: none;
+  }
+  .mobile-app-title-box {
+    margin-left: 0px;
+  }
+
+  .mobile-app-title-box p,
+  .mobile-app-title-box h1 {
+    text-align: initial;
+  }
+  .market-lins-wrapper {
+    justify-content: initial;
+  }
+  /* .market-lins-wrapper img:first-child {
+    margin-left: initial;
+  } */
+  .market-lins-wrapper p {
+    line-height: 45px;
+  }
+  .store-box img:nth-child(2) {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 492px) {
+  .store-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .market-lins-wrapper p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .mobile-app-title-box h1 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .redline {
+    height: 3px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .google-play-logo {
+    margin-left: 0px;
+  }
+  .mobile-app-title-box p:last-child {
+    margin-top: 5px;
+  }
+  .market-lins-wrapper {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 369px) {
+  .mobile-app-title-box h1 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .mobile-app-title-box p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .market-lins-wrapper p {
+    font-size: 18px;
+  }
+  .store-box img {
+    width: 130px;
+  }
+}

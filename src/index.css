@@ -1,13 +1,64 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container__size {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "ArialRegular";
+  src: url("./assets/font/ARIAL.TTF") format("truetype");
+}
+@font-face {
+  font-family: "AcromRegular";
+  src: url("./assets/font/Acrom-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AcromMedium";
+  src: url("./assets/font/Acrom-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AcromBold";
+  src: url("./assets/font/Acrom-Bold.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --mainBlue: #152474;
+  --blackTwoColor: #454142;
+  --yellowTwoColor: #fde0a9;
+  --sectionsShadow: 0px 9px 8px rgba(0, 0, 0, 0.07);
+  --sectionBorder: #b1b1b1;
+  --placeHolderColor: #cccccc;
+  --bannerGradient: linear-gradient(
+    0deg,
+    rgba(34, 67, 152, 0.74),
+    rgba(34, 67, 152, 0.74)
+  );
+  --greenButton: #189533;
+  --hrRedColor: #d70c17;
+  --footerColor: #737373;
+  --mediaColor: #c1c6c8;
+  --white: #ffffff;
+  --searchInputColor: #c4c4c4;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+input:focus,
+select:focus {
+  outline: none;
 }
