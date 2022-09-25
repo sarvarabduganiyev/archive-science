@@ -17,7 +17,7 @@ function SectionCard() {
     <section>
       <div className="sectionCard">
         {sectionNames.map((item) => (
-          <SectionCardInner  item={item}/>
+          <SectionCardInner key={item} item={item}/>
         ))}
       </div>
     </section>

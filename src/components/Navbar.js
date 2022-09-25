@@ -7,7 +7,6 @@ import {
   GlassesIcon,
   GlobalNavIcon,
   LocationIcon,
-  LogOut,
   MessageNavIcon,
   TelegramNavIcon,
 } from "../assets/svg";
@@ -16,7 +15,7 @@ import "../style/Navbar.css";
 import BurgerContent from "./BurgerContent";
 import LogInBtn from "./LogInBtn";
 function Navbar() {
-  const [tab, setTab] = useState("first");
+  const [tab, setTab] = useState(true);
   const [toggle, setToggle] = useState(true);
   const BurgerChange = () => {
     setToggle(!toggle);
@@ -33,14 +32,14 @@ function Navbar() {
               <div className="navbar-first-line">
                 <div className="navbar-tab-wrapper">
                   <button
-                    onClick={() => setTab("first")}
-                    className={tab === "first" ? "border-bottom-color" : null}
+                    onClick={() => setTab(true)}
+                    className={tab ? "border-bottom-color" : null}
                   >
                     Совет даври архив фондлари бўйича электрон йўлкўрсатги
                   </button>
                   <button
-                    onClick={() => setTab("last")}
-                    className={tab === "last" ? "border-bottom-color" : null}
+                    onClick={() => setTab(false)}
+                    className={!tab ? "border-bottom-color" : null}
                   >
                     Мавзули қидириш
                   </button>

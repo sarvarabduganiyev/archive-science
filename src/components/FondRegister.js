@@ -3,7 +3,7 @@ import "../style/FondRegister.css";
 
 function FondRegister() {
   const [fondTab, setFondTab] = useState(true);
-  const [onlyNumber, setOnlyNumber] = useState(null);
+  const [onlyNumber, setOnlyNumber] = useState("");
   const fondNumber = (e) => {
     const value = e.target.value.replace(/\D/g, "");
     setOnlyNumber(value);

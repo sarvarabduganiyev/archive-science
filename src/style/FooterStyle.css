@@ -8,6 +8,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .logo-footer-content {
   margin-top: 20px;
