@@ -1,6 +1,9 @@
+import Input from "react-phone-number-input/input";
 import "../style/CallCenter.css";
 import Operator from "../assets/img/opertorCall.png";
+import { useState } from "react";
 function CallCenter() {
+  const [value, setValue] = useState();
   return (
     <section className="call-section-name">
       <div className="call-center-wrapper">
@@ -26,10 +29,13 @@ function CallCenter() {
               </div>
               <div className="phone-wrapper">
                 <p>Телефон</p>
-                <input
-                  type="text"
+                <Input
                   className="person-phone-input"
-                  placeholder="+998 (__) ___-__-__"
+                  country="UZ"
+                  international
+                  withCountryCallingCode
+                  value={value}
+                  onChange={setValue}
                 />
               </div>
               <div className="select-location-wrapper">

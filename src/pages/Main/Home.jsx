@@ -7,6 +7,7 @@ import Navbar from "../../components/Navbar";
 import SectionCard from "../../components/SectionCard";
 import SwiperComponent from "../../components/SwiperComponent";
 
+// https://archive-science.vercel.app/
 function Home() {
   return (
     <>
